@@ -1,3 +1,3 @@
-# Calender Project #
+# Calender Project
 
 First Semester Project.

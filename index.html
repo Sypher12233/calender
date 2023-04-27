@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,11 +9,37 @@
         html {
             background-color: lightblue;
         }
+
+        table {
+            width: 60%;
+            height: 60%;
+            position: absolute;
+            top: 0; bottom: 0; left: 0; right: 0;
+            margin: auto;
+        }
+
+        caption {
+            font-size: 80px;
+            padding: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        td {
+            text-align: center;
+            border: 1px solid red;
+            /* border-radius: 50%; */
+        }
     </style>
     <title>Calender Project</title>
 </head>
+
 <body>
-    <table style="width: 60%;">
+    <table>
         <caption>Calender Project</caption>
         <tr>
             <th>Sat</th>
@@ -32,8 +59,8 @@
             <td>5</td>
             <td>6</td>
             <td>7</td>
-            </tr>
-            <tr>
+        </tr>
+        <tr>
             <td>8</td>
             <td>9</td>
             <td>10</td>
@@ -41,8 +68,8 @@
             <td>12</td>
             <td>13</td>
             <td>14</td>
-            </tr>
-            <tr>
+        </tr>
+        <tr>
             <td>15</td>
             <td>16</td>
             <td>17</td>
@@ -50,8 +77,8 @@
             <td>19</td>
             <td>20</td>
             <td>21</td>
-            </tr>
-            <tr>
+        </tr>
+        <tr>
             <td>22</td>
             <td>23</td>
             <td>24</td>
@@ -62,4 +89,5 @@
         </tr>
     </table>
 </body>
+
 </html>
