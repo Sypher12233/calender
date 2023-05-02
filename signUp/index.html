@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up - Sypher Sec</title>
+    <style>
+        html{
+            margin-left: 10rem;
+            background-color: antiquewhite;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+    </style>
+  </head>
+
+  <body>
+    <form action="../index.html" target="_blank" method="POST">
+      <h1>Sign Up</h1>
+
+      <label for="name">
+        <h3>Username:</h3>
+      </label>
+      <input
+        type="email"
+        name="username"
+        id="name"
+        autocomplete="off"
+        placeholder="Username"
+      />
+      <br />
+
+      <label for="pass">
+        <h3>Password:</h3>
+      </label>
+      <input
+        type="password"
+        name="pass"
+        id="pass"
+        autocomplete="off"
+        placeholder="Password"
+      /><br /><br />
+
+      <h1>Gender</h1>
+      <input type="radio" id="m" name="gender" />
+      <label for="m">Male</label><br /><br />
+
+      <input type="radio" id="f" name="gender" />
+      <label for="f">Female</label><br /><br />
+
+      <input type="radio" id="other" name="gender" />
+      <label for="other">Other</label>
+
+      <h1>Data Sharing</h1>
+      <p>How much data would you allow to be collected from you?</p>
+      <label for="data">Amount:</label>
+      <select>
+        <option>select</option>
+        <option>Low</option>
+        <option>Medium</option>
+        <option>High</option>
+      </select><br /><br /><br />
+
+      <input type="submit" />
+    </form>
+  </body>
+</html>
