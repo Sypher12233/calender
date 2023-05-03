@@ -1,159 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
-        html {
-            background-color: aqua;
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-                Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-                sans-serif;
-        }
+      html {
+        background-color: aqua;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+      }
 
-        header {
-            margin-bottom: 1rem;
-            background-color: rgba(255, 255, 255, 0.534);
-            border: 1px solid red;
-            width: 100%;
-            height: 5rem;
-            display: flex;
-            align-items: center;
-        }
+      header {
+        margin-bottom: 1rem;
+        background-color: rgba(255, 255, 255, 0.534);
+        /* border: 1px solid red; */
+        width: 100%;
+        height: 5rem;
+        display: flex;
+        align-items: center;
+      }
 
-        header button,
-        a {
-            flex: 1;
-            text-align: center;
-            border: none;
-            background-color: inherit;
-            font-size: large;
-            font-weight: 600;
-            text-decoration: none;
-            /* border: 1px solid red; */
-        }
+      header button,
+      a {
+        flex: 1;
+        text-align: center;
+        border: none;
+        background-color: inherit;
+        font-size: large;
+        font-weight: 600;
+        text-decoration: none;
+      }
 
-        header a {
-            border: 1px solid red;
-        }
+      table {
+        width: 60%;
+        height: 60%;
+        margin: auto;
+      }
 
-        table {
-            width: 60%;
-            height: 60%;
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            margin: auto;
-        }
+      caption {
+        font-style: italic;
+        font-size: 80px;
+        padding: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: blueviolet;
+      }
 
-        caption {
-            font-style: italic;
-            font-size: 80px;
-            padding: 10px;
-            font-family: Arial, Helvetica, sans-serif;
-            color: blueviolet;
-        }
+      table th,
+      table td {
+        border: 2px solid black;
+      }
 
-        table,
-        th,
-        td {
-            border: 2px solid black;
-            border-collapse: collapse;
-        }
+      table td {
+        text-align: center;
+        border: 2px solid violet;
+        font-weight: 800;
+      }
 
-        td {
-            text-align: center;
-            border: 2px solid violet;
-            font-weight: 800;
-            /* border-radius: 50%; */
-        }
+      .table-wrapper {
+        margin-top: 3rem;
+      }
+
+      .table-wrapper:first-child {
+        margin-bottom: 3rem;
+      }
+
+      body {
+        margin: 0;
+      }
     </style>
     <title>Calender Project</title>
-</head>
+  </head>
 
-<body style="margin: 0">
+  <body>
     <header>
-        <button>
-            <a href="https://github.com/Sypher12233" target="_blank">
-                1st Semester Projects
-            </a>
-        </button>
-        <button>
-            <a href="https://github.com/Sypher12233/calender" target="_blank">
-                Browse Our Code Base
-            </a>
-        </button>
-        <button>
-            <a href="https://sypher12233.github.io/aboutSypherSec/" target="_blank">
-                Sypher Sec Website
-            </a>
-        </button>
-        <button>
-            <a href="./resources/socials.html" target="_blank">
-                Our Socials
-            </a>
-        </button>
-        <button>
-            <a href="./resources/signUp.html" target="_blank">
-                Sign Up
-            </a>
-        </button>
+      <button>
+        <a href="https://github.com/Sypher12233" target="_blank">
+          <h4 style="color: blue">1st Semester Projects</h4>
+        </a>
+      </button>
+      <button>
+        <a href="./groceries.html" target="_blank">
+          <h4 style="color: blue">Nested List</h4>
+        </a>
+      </button>
+      <button>
+        <a href="https://github.com/Sypher12233/calender" target="_blank">
+          <h4 style="color: blue">Browse Our Code Base</h4>
+        </a>
+      </button>
+      <button>
+        <a href="https://sypher12233.github.io/aboutSypherSec/" target="_blank">
+          <h4>Sypher Sec Website</h4>
+        </a>
+      </button>
+      <button>
+        <a href="./resources/socials.html" target="_blank">
+          <h4>Our Socials</h4>
+        </a>
+      </button>
+      <button>
+        <a href="./resources/signUp.html" target="_blank">
+          <h4>Sign Up</h4>
+        </a>
+      </button>
     </header>
-    <table>
+
+    <div class="table-wrapper">
+      <table>
         <caption>
-            Calender Project
+          May 2023
         </caption>
-        <tr style="color: rgb(0, 123, 255)">
-            <th>Sat</th>
-            <th>Sun</th>
+        <thead>
+          <tr>
             <th>Mon</th>
             <th>Tue</th>
             <th>Wed</th>
             <th>Thu</th>
-            <th style="color: red">Fri</th>
-        </tr>
-
-        <tr>
+            <th>Fri</th>
+            <th>Sat</th>
+            <th>Sun</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
             <td>1</td>
             <td>2</td>
             <td>3</td>
+          </tr>
+          <tr>
             <td>4</td>
             <td>5</td>
             <td>6</td>
-            <td style="color: red">7</td>
-        </tr>
-        <tr>
+            <td>7</td>
             <td>8</td>
             <td>9</td>
             <td>10</td>
+          </tr>
+          <tr>
             <td>11</td>
             <td>12</td>
             <td>13</td>
-            <td style="color: red">14</td>
-        </tr>
-        <tr>
+            <td>14</td>
             <td>15</td>
             <td>16</td>
             <td>17</td>
+          </tr>
+          <tr>
             <td>18</td>
             <td>19</td>
             <td>20</td>
-            <td style="color: red">21</td>
-        </tr>
-        <tr>
+            <td>21</td>
             <td>22</td>
             <td>23</td>
             <td>24</td>
+          </tr>
+          <tr>
             <td>25</td>
             <td>26</td>
             <td>27</td>
-            <td style="color: red">28</td>
-        </tr>
-    </table>
-</body>
+            <td>28</td>
+            <td>29</td>
+            <td>30</td>
+            <td>31</td>
+          </tr>
+        </tbody>
+      </table>
 
+      <table>
+        <caption>
+          Calender
+        </caption>
+        <tr>
+          <th colspan="5">Week of May 1-7</th>
+        </tr>
+        <tr>
+          <th>Monday</th>
+          <th>Tuesday</th>
+          <th>Wednesday</th>
+          <th>Thursday</th>
+          <th>Friday</th>
+        </tr>
+        <tr>
+          <td>8:00 AM</td>
+          <td></td>
+          <td>8:00 AM</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>9:00 AM</td>
+          <td></td>
+          <td>9:00 AM</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>10:00 AM</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>10:00 AM</td>
+        </tr>
+      </table>
+
+      <table>
+        <caption>
+          Time Slots
+        </caption>
+        <tr>
+          <th>Time Slot</th>
+          <th>Availability</th>
+        </tr>
+        <tr>
+          <td>8:00 AM</td>
+          <td>Available</td>
+        </tr>
+        <tr>
+          <td>9:00 AM</td>
+          <td>Not Available</td>
+        </tr>
+        <tr>
+          <td>10:00 AM</td>
+          <td>Available</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+  <footer>
+    <p>&copy; 2023 Calender Project</p>
+  </footer>
 </html>
